@@ -1,0 +1,52 @@
+/*共通*/
+body{
+  margin: 0;  
+  font-size: 100%;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;  
+}
+
+/*コンテンツ*/
+.wrapper{
+  width: 960px;
+  margin: 50px auto;
+}
+
+/*リスト*/
+.lists{
+  margin-bottom: 50px;
+}
+.lists li{
+  padding: 20px;
+  color: gray;
+}
+.lists li:nth-of-type(odd){
+  background: lightgray;
+}
+
+
+/*ボックス*/
+.boxes{
+  display: flex;
+  flex-wrap: wrap;
+}
+.boxes li{
+  width: 30%;
+  height: 200px;
+  margin-bottom: 40px;
+  background: yellow;
+}
+.boxes li:nth-of-type(3n+2){
+  margin: 0 5%;
+}
+.boxes li:nth-of-type(4n+1){
+  background: orange;
+}
+.boxes li:nth-last-of-type(-n+3){
+  margin-bottom: 0;  
+}
